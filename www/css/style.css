@@ -1,0 +1,92 @@
+*,
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: Chalkboard;
+    src: url('../font/Chalk.ttf');
+}
+
+@font-face {
+    font-family: ChalkboardBold;
+    src: url('../font/ChalkBold.ttf');
+}
+
+/* Remove text before page finished loaded */ 
+.visibleBeforeLoaded{    
+    font-family: ChalkboardBold;
+    font-size: 1.96em;
+    color: #E8EA61;
+    position: absolute;
+    bottom: 0px;
+    left: 110px; 
+}
+
+[data-fetch-success="true"] .visibleBeforeLoaded{
+    display: none;
+}
+.hiddenBeforeLoaded{
+    display: none;
+}
+
+[data-fetch-success="true"] .hiddenBeforeLoaded{
+    display: block;
+}
+
+/* Background */
+.bg {
+    display: block;
+    top: 0;
+} 
+
+/* Text */
+
+.lokasjon {
+    font-family: ChalkboardBold;
+    font-size: 1.96em;
+    color: #E8EA61;
+    position: absolute;
+    bottom: 0;
+    left: 154px; 
+}
+
+.temperatur { 
+    font-family: Chalkboard;
+    line-height: 0.6;
+    font-size: 1.8em;
+    color: #013FA2;
+    position: absolute;
+    bottom: 200px;
+    left: 345px; 
+}
+
+/* Make temp stats display evenly lined*/
+#tempLuft {
+    padding-left: 7px; 
+}
+
+/*
+.linje2 {
+    border-left: 7px solid red;
+    height: 6px;
+    position: absolute;
+    left: 117.5px;
+    bottom: 163px;
+    transform: rotate(-1.7deg); 
+}
+*/
+
+/* Temperature line*/
+.linje {
+    border-left: 7px solid red;
+    height: 0px;
+    position: absolute;
+    left: 129px;
+    bottom: 198px;
+    transform: rotate(-1.60deg); 
+    transition: height 1s ease-out 0s
+}

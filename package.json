@@ -1,0 +1,22 @@
+{
+  "name": "badetemperatur",
+  "version": "0.1.0",
+  "description": "badetemperatur",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Andyradall/Andyradall.github.io"
+  },
+  "scripts": {
+    "start": "electron .",
+   "pack": "electron-packager . --icon \"app_icons/bad.icns\" --overwrite"
+  },
+  "author": "Anders Rådal",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.6.7",
+    "electron-packager": "^8.7.0",
+    "node-fetch": "^2.1.2",
+    "xml2js": "^0.4.19"
+  }
+}
