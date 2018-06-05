@@ -23,7 +23,7 @@ html {
     color: #E8EA61;
     position: absolute;
     bottom: 0px;
-    left: 110px; 
+    left: 85px; 
 }
 
 [data-fetch-success="true"] .visibleBeforeLoaded{
@@ -51,7 +51,7 @@ html {
     color: #E8EA61;
     position: absolute;
     bottom: 0;
-    left: 154px; 
+    left: 154px;
 }
 
 .temperatur { 
@@ -68,17 +68,6 @@ html {
 #tempLuft {
     padding-left: 7px; 
 }
-
-/*
-.linje2 {
-    border-left: 7px solid red;
-    height: 6px;
-    position: absolute;
-    left: 117.5px;
-    bottom: 163px;
-    transform: rotate(-1.7deg); 
-}
-*/
 
 /* Temperature line*/
 .linje {

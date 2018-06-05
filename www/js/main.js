@@ -19,11 +19,11 @@ fetch('https://om.yr.no/badetemperatur/badetemperatur.xml')
             console.log(yrData)
 
             // Stien til badetemperaturen på Oscarsborg Festning
-            var oscarsBorgFestningTempVann = yrData.badetemp.badetemperaturer[0].county[4].place[0].temperature[0].$.water;
+            var oscarsBorgFestningTempVann = yrData.badetemp.badetemperaturer[0].county[5].place[0].temperature[0].$.water;
             console.log(oscarsBorgFestningTempVann);
 
             // Stien til lufttemperaturen på Oscarsborg Festning
-            var oscarsBorgFestningTempLuft = yrData.badetemp.badetemperaturer[0].county[4].place[0].temperature[0].$.air;
+            var oscarsBorgFestningTempLuft = yrData.badetemp.badetemperaturer[0].county[5].place[0].temperature[0].$.air;
             console.log(oscarsBorgFestningTempLuft);
 
             // Sett inn verdier for vann, og luft - temperatur i app
